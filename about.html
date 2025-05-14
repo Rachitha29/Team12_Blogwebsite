@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('blog') }}">Blog</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('contact') }}">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Who We Are</h2>
+            <p>This blog platform was built as a group project by 4 developers using Python, HTML, and CSS. It’s designed to showcase simple static content using Flask on the backend.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Static Blog</p>
+    </footer>
+</body>
+</html>
+
