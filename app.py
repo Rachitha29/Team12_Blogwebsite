@@ -5,6 +5,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Needed for flash messages
 
 @app.route('/contact', methods=['GET', 'POST'])
+
 def contact():
     if request.method == 'POST':
         name = request.form.get("name")
