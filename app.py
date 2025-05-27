@@ -8,9 +8,9 @@ app.secret_key = os.urandom(24)  # Needed for flash messages
 
 def contact():
     if request.method == 'POST':
-        name = request.form.get("name")
-        email = request.form.get("email")
-        message = request.form.get("message")
+        name = request.form.get("name", "").strip()
+        email = request.form.get("email", "").strip()
+        message = request.form.get("message", "").strip()
 
         if not name or not email or not message:
             flash("Please fill out all fields.", "error")
